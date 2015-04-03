@@ -2,7 +2,19 @@
 <resources>
 
     <string name="app_name">Android_Assn</string>
-    <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_main">Main Activity</string>
+
+    <string name="edit_message">Enter Message</string>
+    <string name="button_send">Send</string>
+
+
+
+
+
+
+
+
+
 
 </resources>
