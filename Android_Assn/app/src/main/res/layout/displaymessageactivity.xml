@@ -21,7 +21,8 @@
         android:layout_width="210dp"
         android:layout_height="wrap_content"
         android:text="@string/button_back"
-        android:textColor="#0000FF"
+        android:textColor="#FFFF"
+        android:background="#000000"
         android:layout_margin="20dp"
         android:layout_gravity="center" />
 
