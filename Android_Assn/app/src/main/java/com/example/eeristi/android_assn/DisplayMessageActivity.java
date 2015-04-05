@@ -25,15 +25,15 @@ public class DisplayMessageActivity extends ActionBarActivity {
         Intent intent3 =getIntent();
         String message3=intent3.getStringExtra(MainActivity.EXTRA_MESSAGE3);
 
+
         String message;
+        message = "\nHello " + message1 + ",\n\nI see here that you like " + message2 + " and that you don't like " + message3 + ".\n\nInteresting!";
+        TextView textView1 = new TextView(this);
+        textView1.setTextSize(40);
+        textView1.setText(message);
+        setContentView(textView1);
 
-        message = message1 + message2 + message3;
 
-        TextView textView = new TextView(this);
-        textView.setTextSize(40);
-
-        textView.setText(message);
-        setContentView(textView);
     }
 
 
