@@ -6,6 +6,8 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.eeristi.android_assn.MainActivity;
@@ -37,6 +39,15 @@ public class DisplayMessageActivity extends ActionBarActivity {
         textView1.setTextColor(Color.BLACK);
         textView1.setText(message);
         //setContentView(textView1);   // Bu komut çalışırsa ekrandaki nesneler görünmüyor ve hata veriyor.
+
+
+        Button btnBack = (Button) findViewById(R.id.btn_back);
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
 
     }

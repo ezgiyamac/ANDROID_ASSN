@@ -18,6 +18,7 @@
         android:layout_gravity="center_vertical" />
 
     <Button
+        android:id="@+id/btn_back"
         android:layout_width="210dp"
         android:layout_height="wrap_content"
         android:text="@string/button_back"
