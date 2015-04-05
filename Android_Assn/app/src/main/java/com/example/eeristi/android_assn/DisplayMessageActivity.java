@@ -1,6 +1,7 @@
 package com.example.eeristi.android_assn;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -29,7 +30,9 @@ public class DisplayMessageActivity extends ActionBarActivity {
         String message;
         message = "\nHello " + message1 + ",\n\nI see here that you like " + message2 + " and that you don't like " + message3 + ".\n\nInteresting!";
         TextView textView1 = new TextView(this);
-        textView1.setTextSize(40);
+        textView1.setTextSize(30);
+        textView1.setTextColor(Color.BLACK);
+        textView1.setBackgroundColor(Color.BLUE);
         textView1.setText(message);
         setContentView(textView1);
 

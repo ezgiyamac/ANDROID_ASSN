@@ -5,5 +5,6 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#004295"
     tools:context="com.example.eeristi.android_assn.DisplayMessageActivity">
 </RelativeLayout>
