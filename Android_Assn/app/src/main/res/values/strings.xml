@@ -9,6 +9,7 @@
     <string name="edit_message2">Enter your like</string>
     <string name="edit_message3">Enter your dislike</string>
     <string name="button_send">SUBMIT</string>
+    <string name="button_back">BACK</string>
 
     <string name="title_activity_display_message">DisplayMessageActivity</string>
 

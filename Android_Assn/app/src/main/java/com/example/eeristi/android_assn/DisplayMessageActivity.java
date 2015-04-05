@@ -17,6 +17,8 @@ public class DisplayMessageActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.displaymessageactivity);
+
         Intent intent1 =getIntent();
         String message1=intent1.getStringExtra(MainActivity.EXTRA_MESSAGE1);
 
@@ -29,12 +31,12 @@ public class DisplayMessageActivity extends ActionBarActivity {
 
         String message;
         message = "\nHello " + message1 + ",\n\nI see here that you like " + message2 + " and that you don't like " + message3 + ".\n\nInteresting!";
-        TextView textView1 = new TextView(this);
+        //TextView textView1 = new TextView(this);
+        TextView textView1 = (TextView)findViewById(R.id.txt_story);
         textView1.setTextSize(30);
         textView1.setTextColor(Color.BLACK);
-        textView1.setBackgroundColor(Color.BLUE);
         textView1.setText(message);
-        setContentView(textView1);
+        //setContentView(textView1);   // Bu komut çalışırsa ekrandaki nesneler görünmüyor ve hata veriyor.
 
 
     }
