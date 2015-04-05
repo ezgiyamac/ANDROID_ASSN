@@ -5,8 +5,10 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_main">Main Activity</string>
 
-    <string name="edit_message">Enter Message</string>
-    <string name="button_send">Send</string>
+    <string name="edit_message1">Enter your name</string>
+    <string name="edit_message2">Enter your like</string>
+    <string name="edit_message3">Enter your dislike</string>
+    <string name="button_send">SUBMIT</string>
 
     <string name="title_activity_display_message">DisplayMessageActivity</string>
 
