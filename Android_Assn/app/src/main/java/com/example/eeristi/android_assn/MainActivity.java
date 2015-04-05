@@ -11,7 +11,9 @@ import android.widget.EditText;
 
 public class MainActivity extends ActionBarActivity {
 
-    public final static  String EXTRA_MESSAGE="com.example.eeristi.Android_Assn.MESSAGE";
+    public final static  String EXTRA_MESSAGE1="com.example.eeristi.Android_Assn.MESSAGE1";
+    public final static  String EXTRA_MESSAGE2="com.example.eeristi.Android_Assn.MESSAGE2";
+    public final static  String EXTRA_MESSAGE3="com.example.eeristi.Android_Assn.MESSAGE3";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,9 +48,19 @@ public class MainActivity extends ActionBarActivity {
     {
         //Hello this is a comment
         Intent intent = new Intent(this, com.example.eeristi.android_assn.DisplayMessageActivity.class);
-        EditText editText = (EditText)findViewById(R.id.edit_message);
-        String message = editText.getText().toString();
-        intent.putExtra(EXTRA_MESSAGE,message);
+
+
+        EditText editText1 = (EditText)findViewById(R.id.edit_message1);
+        intent.putExtra(EXTRA_MESSAGE1,editText1.getText().toString());
+
+
+        EditText editText2 = (EditText)findViewById(R.id.edit_message2);
+        intent.putExtra(EXTRA_MESSAGE2,editText2.getText().toString());
+
+
+        EditText editText3 = (EditText)findViewById(R.id.edit_message3);
+        intent.putExtra(EXTRA_MESSAGE3,editText3.getText().toString());
+
         startActivity(intent);
     }
 
